@@ -25,7 +25,7 @@ def solution(A, D):
         # Check if there are at least 3 transactions in the month and total amount is greater than or equal to -100
         if month in cards and len(cards[month]) >= 3 and sum(cards[month]) >= -100:
             # If conditions met, apply fees for transactions beyond the first 3
-            balance += fees * (len(cards[month]) - 3)
+            balance += amount
         else:
             # If conditions not met, apply fees for the month
             balance -= fees 
